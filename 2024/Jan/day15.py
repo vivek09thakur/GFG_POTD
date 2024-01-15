@@ -16,4 +16,4 @@ class Solution:
             if tot>=cost[i]:
                 mx=max(mx,dp(i+1,tot-cost[i]+math.floor(cost[i]*.9))+1)
             return mx
-        return dp()a
+        return dp()
