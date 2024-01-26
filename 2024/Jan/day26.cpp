@@ -22,21 +22,16 @@ class Solution
         double total=0;
         for(int i=0;i<n;i++)
         {
-            //agr current ki value total W se badi hai to hum uski sirf kuch fraction hii le payenge..
             if(v[i].second.weight > W)
             {
                 total=total + W*v[i].first;
                 W=0;
             }
             else{
-                //vrna hum full item le payenge
                 total=total+v[i].second.value;
-                //second ki value kam ho ajyegi dusre ki weight se
                 W=W-v[i].second.weight;
             }
-            
         }
         return total;
     }
-        
 };
